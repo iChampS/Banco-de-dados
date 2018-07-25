@@ -1,0 +1,59 @@
+create database assisti;
+use assisti;
+-- auto_increment gera números inteiros automaticamente
+create table tb_cliente(
+idcli int auto_increment primary key,
+nomecli varchar(50) not null,
+fonecli varchar(50) not null,
+cpfcli varchar(15) unique,
+emailcli varchar(50)
+);
+
+describe tb_cliente;
+
+-- insert com valores nulos
+insert into tb_cliente
+values (null,'Bill Gates','1111-1111','111.111.111-11','bill@outlook.com');
+
+select * from tb_cliente;
+
+insert into tb_cliente
+values (null,'Linus Torvalds','2222-2222','22222222222','linus@linux.com');
+
+insert into tb_cliente
+values (null,'Steve Jobs','3333-3333','22222222222','steve@iclud.com');
+
+update tb_cliente set cpfcli  = '22222222222' where idcli = 3;
+
+-- inserindo valores de forma personalizada
+insert into tb_cliente(nomecli,fonecli)
+values('Victor Guilherme Leite de Medeiros','4444-4444');
+
+insert into tb_cliente(nomecli,fonecli,emailcli)
+values('Bruce Wane','6666-6666','batman@gmail.com');
+
+-- drop table nome_tabela (apagar uma tabela)
+-- decimal(10,2) tipo numerico real que aceita 10 (digitos) 2 (casas decimais)
+create table tb_os(
+idos int auto_increment primary key,
+equipamento varchar(100)not null,
+defeito varchar(100)not null,
+orcamento decimal(10,5)not null
+);
+
+show tables;
+describe tb_os;
+
+insert into tb_os(equipamento,defeito,orcamento)
+values ('Notebook Lenovo','Não Liga',250);
+
+select *from tb_os;
+
+insert into tb_os(equipamento,defeito,orcamento)
+values ('Controle de console','Joystick botão soltou',85.800);
+
+-- comando para alterar o start do inicio do auto incremento
+alter table tb_os auto_increment = 1000;
+
+insert into tb_os(equipamento,defeito,orcamento)
+values ('Impressora HP 15000','Entupida',100.50);
