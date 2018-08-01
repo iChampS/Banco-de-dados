@@ -1,5 +1,6 @@
 use dbinfox;
 -- inspecionar tabelas no banco de dados
+-- iniciar
 show tables;
 -- o c?digo abaixo cria uma tabela
 create table tb_cliente(
