@@ -47,6 +47,18 @@ show tables;
 describe tb_cliente;
 -- inserindo dados na tabela (Create)
 insert into tb_cliente values
-(1,'452.412.382-20','Victor Guilherme Leite de Medeiros','08452-000','Avenida Brasil','São Paulo','622','vitim123','Jardim Nova Vila','Poá','SP','2745-5692','6969-6969','victor.leite9@hotmail.com');
+(null,'452.412.382-20','Victor Guilherme Leite de Medeiros','08452-000','Avenida Brasil','São Paulo','622','vitim123','Jardim Nova Vila','Poá','SP','2745-5692','6969-6969','victor.37@outlook.com');
+
+insert into tb_cliente values
+(null,'469.422.655/32','Geovani Bandeira','08568-300','Avenida Adutora','Adutora','622','oioioi','Jardim Nova Poá','Poá','SP','4638-0052','6969-6969','gmbandeira01@hotmail.com');
+
+insert into tb_cliente values
+(null,'555.845.682/55','Fabricio Ferreira','1515-5525','Palete','Houter','12','mestre','Pokemon','Rota 8','SP','8889-1528','6815-5456','fabras002@gmail.com');
+
+insert into tb_cliente values
+(null,'546.484.585-30','Arlindo Flores da Silva','05814-548','San Diego','San Diego','456','San Diego','San Diego','San Diego','AM','8588-5282','5858-1456','arlindo.22@hotmail.com');
+
+insert into tb_cliente values
+(null,'454.556.548-55','Giacomo Vinicius Junior','08568-300','Avenida Praia Grande','Jucelino','822','junim123','Jardim Oliva','OL','SP','4639-0052','9696-9696','giacomo.31@outlook.com');
 select * from tb_cliente;
 delete from tb_cliente where idcli = 1;
