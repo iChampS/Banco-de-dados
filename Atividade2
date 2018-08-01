@@ -1,6 +1,7 @@
 use dbinfox;
 -- inspecionar tabelas no banco de dados
 show tables;
+-- iniciar
 -- o código abaixo cria uma tabela
 create table tb_usuarios(iduser int primary key,
 usuario varchar(50) not null,
