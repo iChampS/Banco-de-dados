@@ -1,6 +1,5 @@
 create database assisti;
 use assisti;
--- ir
 -- auto_increment gera números inteiros automaticamente
 create table tb_cliente(
 idcli int auto_increment primary key,
